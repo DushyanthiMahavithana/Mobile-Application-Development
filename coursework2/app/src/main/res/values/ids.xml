@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="listView" type="id" />
+    <item name="editTextTextIngredient" type="id" />
+    <item name="retrieveMealsBtn" type="id" />
+    <item name="textView4" type="id" />
+    <item name="resultsTextView" type="id" />
+    <item name="mealLayout" type="id" />
+    <item name="gridView" type="id" />
+</resources>

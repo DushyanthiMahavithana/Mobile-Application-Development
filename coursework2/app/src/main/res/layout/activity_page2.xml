@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:padding="40dp"
+
+            tools:context=".MainActivity">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:text="@string/add_meals_to_db2"
+                    android:textColor="@color/teal_200"
+                    android:textSize="29sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/mealId"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_marginTop="40dp"
+            android:ems="20"
+            android:hint="@string/meal"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/drinkId"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_marginTop="32dp"
+            android:ems="20"
+            android:hint="@string/drink_alternate"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mealId"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/categoryId"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="44dp"
+            android:ems="10"
+            android:hint="@string/category"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.432"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/drinkId"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/areaId"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="@string/area"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/categoryId"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/instructionsId"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="52dp"
+            android:ems="10"
+            android:hint="@string/instructions"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/areaId"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/mealThumbId"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="51dp"
+            android:ems="10"
+            android:hint="@string/meal_thumb"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/instructionsId"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/tagsId"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="52dp"
+            android:ems="10"
+            android:hint="@string/tags"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mealThumbId"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/youtubeId"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="43dp"
+            android:ems="10"
+            android:hint="@string/you_tube"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tagsId"
+            android:autofillHints="" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="132dp"
+            android:text="@string/ingredients"
+            android:textColor="@color/teal_200"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/youtubeId" />
+
+        <EditText
+            android:id="@+id/Ing1"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="@string/ingredient_1"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/Ing2"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/ingredient_2"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Ing1"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/Ing3"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="27dp"
+            android:ems="10"
+            android:hint="@string/ingredient_3"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Ing2"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/Ing4"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="@string/ingredient4new"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Ing3"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/Ing5"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="35dp"
+            android:ems="10"
+            android:hint="@string/ingredient_5"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Ing4"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/Ing6"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="@string/ingredient_6"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Ing5"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/Ing7"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="35dp"
+            android:ems="10"
+            android:hint="@string/ingredient_7"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Ing6"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/Ing8"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="@string/ingredient_8"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Ing7"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/Ing9"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="@string/ingredient_9"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Ing8"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/Ing10"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:hint="@string/ingredient_10"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Ing9"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="144dp"
+            android:text="@string/measures"
+            android:textColor="@color/teal_200"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Ing10" />
+
+        <EditText
+            android:id="@+id/Mes1"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="35dp"
+            android:ems="10"
+            android:hint="@string/measure_1"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/Mes2"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:hint="@string/measure_2"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Mes1"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/Mes3"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:hint="@string/measure_3"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Mes2"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/Mes4"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:hint="@string/measure_4"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Mes3"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/Mes5"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:hint="@string/measure_5"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Mes4"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/Mes6"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:hint="@string/measure_6"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Mes5"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/Mes7"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:hint="@string/measure_7"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Mes6"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/Mes8"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:hint="@string/measure_8"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Mes7"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/Mes9"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:hint="@string/measure_9"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Mes8"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/Mes10"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:hint="@string/measure_10"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Mes9"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/source"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:hint="@string/source"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Mes10"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/imgSource"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:hint="@string/image_source"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/source"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/creative"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:hint="@string/creative_commons_confirmed"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgSource"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/dateModified"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:hint="@string/date_modified"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/creative"
+            android:autofillHints="" />
+
+        <Button
+            android:id="@+id/nextPage1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/add_to_db"
+            android:backgroundTint="@color/teal_200"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dateModified" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
